@@ -1,1 +1,0 @@
-const nav = <document className="quer"></document>
