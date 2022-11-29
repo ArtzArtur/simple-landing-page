@@ -16,7 +16,7 @@ ul {
 html {
   scroll-behavior: smooth;
   font-size: 20px;
-  scroll-padding-top: 49px;
+  scroll-padding-top: 28px;
 }
 
 .logo {
@@ -189,7 +189,7 @@ main, footer {
   text-align: center;
   box-shadow: 0 0 2px #fff;
   background: #18521b;
-  padding: 1rem;
+  padding: 3rem;
   font-weight: 800;
 }
 
@@ -279,7 +279,7 @@ main, footer {
 
 .trail__header {
   background: #18521b;
-  padding: 1rem;
+  padding: 3rem;
   box-shadow: 0 0 1px #fff;
   text-align: center;
   font-size: 1.25rem;
@@ -290,7 +290,7 @@ main, footer {
 .trail__card {
   max-width: 1000px;
   padding: 0.5rem 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
   cursor: pointer;
   position: relative;
   font-size: 1.05rem;
@@ -317,7 +317,7 @@ main, footer {
   transform: translateY(-50%);
 }
 
-.trail__card:not(.test):hover {
+.trail__card:not(.expand):hover {
   outline: 2px solid #fff;
 }
 
@@ -328,7 +328,7 @@ main, footer {
 .trail__map {
   margin: 0 auto;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   display: block;
   max-width: 250px;
   background: #18521b;
@@ -351,13 +351,13 @@ main, footer {
   margin: 0.25rem;
 }
 
-.trail__card.test:before {
+.trail__card.expand:before {
   content: "-";
 }
 
-.trail__card.test .trail__container {
+.trail__card.expand .trail__container {
   padding: 0.5rem;
-  height: 170px;
+  height: 200px;
 }
 
 .prices {
@@ -372,7 +372,7 @@ main, footer {
 
 .prices__header {
   font-size: 1.25rem;
-  padding: 1rem;
+  padding: 3rem;
   background: #18521b;
   color: #fff;
   box-shadow: 0 0 1px #fff;
@@ -406,7 +406,7 @@ main, footer {
 
 .contact__header {
   background: #18521b;
-  padding: 1rem;
+  padding: 3rem;
   font-size: 1.25rem;
   box-shadow: 0 0 1px #fff;
 }
@@ -414,6 +414,7 @@ main, footer {
 .contact__container {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 1rem;
 }
 
 .form {
@@ -486,7 +487,7 @@ main, footer {
 }
 
 .footer__nav {
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   padding: 2rem;
 }
 
@@ -499,7 +500,6 @@ main, footer {
 
 .footer__nav__item {
   padding: 0.5rem;
-  color: #fff;
 }
 
 .footer__nav__item:hover {
@@ -510,8 +510,6 @@ main, footer {
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
-  color: #000;
-  background-color: #fff;
   padding: 1rem;
 }
 
@@ -523,8 +521,6 @@ main, footer {
 .copyrights {
   padding: 1rem;
   letter-spacing: 1ch;
-  background: #fff;
-  color: #000;
 }
 
 @media (min-width: 800px) {
@@ -576,7 +572,8 @@ main, footer {
   .contact__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: stretch;
+    color: #000;
+    background-color: #fff;
   }
   .footer__nav {
     margin-top: 0;
