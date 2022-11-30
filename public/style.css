@@ -560,6 +560,7 @@ main, footer {
     justify-content: stretch;
   }
   .prices__list {
+    padding-bottom: 1rem;
     width: 100%;
   }
   .contact__container {
