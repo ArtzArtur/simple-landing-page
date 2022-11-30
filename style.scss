@@ -1,8 +1,16 @@
-// resets
-$color-transparent: rgba(85, 126, 98, 0.65);
+//variables
+
+$color-transparent: rgba(85, 126, 98, 0.767);
 $color-light: #09f611;
 $color-darker: #18521b;
 
+$space-half:0.5rem;
+$space-1:1rem;
+$space-2:2rem;
+$space-3:3rem;
+
+
+// resets
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +21,12 @@ a {
   text-decoration: none;
 }
 ul {
+  margin:0;
   list-style: none;
+}
+input,textarea{
+  outline: none;
+    border:none;
 }
 html {
   scroll-behavior: smooth;
@@ -24,11 +37,11 @@ html {
 .logo {
   display: flex;
   align-items: center;
+  padding-inline:$space-1;
   &__text {
     color: #fff;
     font-weight: 100;
     letter-spacing: 0.5ch;
-    padding: 1rem 0.5rem;
     font-size: clamp(0.9rem,4vw,1.25rem);
     font-style: italic;
   }
@@ -49,13 +62,13 @@ html {
 }
 //go to top btn
 .btn__top{
+  padding:$space-half;
   opacity:0;
   pointer-events: none;
   position:fixed;
   top:50%;
   right:1%;
   z-index:2;
-  padding:0.25rem;
   font-size:1.25rem;
   background: #fff;
   color:$color-darker;
@@ -77,12 +90,13 @@ html {
   height:50px;
   z-index: 2;
   background: $color-darker;
+  padding-block:$space-1;
   &__icon {
+  padding-right:$space-1;
     z-index: 2;
     color: #fff;
     position: relative;
     font-size: clamp(1.25rem,8vw,2.5rem);
-    padding: 0.5rem;
     transition: 0.3s transform ease;
     border-radius: 0 0 0 1rem;
     &:hover {
@@ -100,13 +114,11 @@ html {
     top: 2rem;
     height: 100vh;
     width: 100%;
-    padding: 1rem;
     background: $color-darker;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-right: 0.5rem;
     
   }
   &__item {
@@ -132,12 +144,12 @@ main,footer{
   position: relative;
 }
 .header {
+  padding:$space-2;
   text-align: center;
   position: absolute;
   top: 40%;
-  background: $color-darker;
+  background: $color-transparent;
   color: #fff;
-  padding: 2.25rem;
   z-index: 1;
   &__text {
     letter-spacing: 0.5ch;
@@ -149,14 +161,13 @@ main,footer{
     font-weight: 700;
   }
   &__link {
-    margin-top: 0.5rem;
-    padding: 0.25rem 1.25rem;
     border: none;
     display: inline-block;
     background: $color-darker;
-    box-shadow:0px 0px 1px #fff;
     color: #fff;
     font-weight: 800;
+    padding-inline:$space-1;
+    padding-block:$space-half;
     &:hover {
       background: $color-light;
       cursor: pointer;
@@ -172,21 +183,20 @@ main,footer{
 .about {
   color: #fff;
   &__header {
+    padding:$space-3;
     text-align: center;
     box-shadow: 0 0 2px #fff;
     background: $color-darker;
-    padding: 3rem;
     font-weight: 800;
   }
   &__text {
     line-height: 2.5ch;
     text-indent: 1rem;
     text-align: justify;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
+    max-width: 1000px;
     color:#000;
+    padding:$space-1;
+    margin:0 auto;
     &::first-letter {
       font-weight: 800;
       font-size: 120%;
@@ -201,24 +211,26 @@ main,footer{
   color:#000;
 }
 .card {
-  box-shadow: 0 0 1px #fff;
-  padding: 1rem;
-  margin: 1rem;
   text-align: center;
   max-width: 20rem;
-  background: #fff;
+  margin:$space-1;
   &__icon {
     font-size: 3rem;
+    padding-top:$space-1;
+
   }
   &__header {
     font-size: 1.25rem;
-    padding: 1rem;
     text-transform: uppercase;
+  padding:$space-1;
   }
   &__text {
     line-height: 2.5ch;
   }
 }
+
+//dynamic classess
+
 .animation__entry{
   opacity:0;
   transition: opacity 0.7s ease-in-out,
@@ -230,8 +242,6 @@ main,footer{
     transform:translateX(30%);
   }
 }
-
-//dynamic classess
 .animation__entry.animation__active{
   opacity:1;
   transform:translateX(0);
@@ -253,20 +263,20 @@ transform:rotate(90deg);
 
 .trail {
   text-align: center;
-  padding-top:1rem;
   &__header {
     background: $color-darker;
-    padding: 3rem;
     box-shadow: 0 0 1px #fff;
     text-align: center;
     font-size: 1.25rem;
     color: #fff;
-    margin-bottom:2rem;
+    padding:$space-3;
   }
   &__card {
-    max-width: 1000px;
-    padding: 0.5rem 2rem;
-    margin: 0.5rem;
+    display:grid;
+    place-content:center;
+    padding:$space-1;
+    width:clamp(150px,80vw,800px);
+    margin:$space-half auto;
     cursor: pointer;
     position: relative;
     font-size: 1.05rem;
@@ -295,17 +305,20 @@ transform:rotate(90deg);
     }
   }
   &__map {
-    margin: 0 auto;
     color: #fff;
-    padding: .5rem;
     display: block;
     max-width: 250px;
-    background: $color-darker;
+    background: $color-transparent;
+    padding:$space-half;
+    margin:0 auto;
     &:hover {
-      background: $color-transparent;
+      background: $color-light;
+      color:#000;
     }
   }
   &__container {
+    display:grid;
+    place-content:center;
     position: relative;
     height: 0;
     overflow: hidden;
@@ -314,108 +327,98 @@ transform:rotate(90deg);
   }
   &__item {
     cursor: auto;
-    margin: 0.25rem;
   }
 }
 .trail__card.expand:before {
   content: "-";
 }
 .trail__card.expand .trail__container {
-  padding: 0.5rem;
   height: 200px;
 }
 // prices
 
 .prices {
-  padding-block:1rem;
   text-align: center;
   &__container {
     margin: 0 auto;
     color: #fff;
   }
   &__header {
+    padding:$space-3;
     font-size: 1.25rem;
-    padding: 3rem;
     background: $color-darker;
     color: #fff;
     box-shadow: 0 0 1px #fff;
   }
   &__list {
-    padding-inline: 0.5rem;
     max-width: 550px;
     margin: 0 auto;
   }
   &__subheader {
+    color:#000;
     font-size: 1.05rem;
-    padding: 1rem;
+    padding:$space-1;
   }
   &__item {
     box-shadow:0px 0px 1px #000;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     color:#000;
-    margin-bottom: 0.25rem;
+    padding:$space-1;
   }
 }
 
 //contact
 
 .footer {
-  background: $color-darker;
-  color: #fff;
   text-align: center;
 }
 .contact {
   &__header {
+    color:#fff;
+    padding:$space-3;
     background:$color-darker;
-    padding: 3rem;
     font-size: 1.25rem;
-    box-shadow: 0 0 1px #fff;
   }
   &__container {
     display: grid;
     grid-template-columns: 1fr;
-    margin:1rem;
   }
 }
 .form {
-  padding-inline: 1rem;
   &__fields {
-    padding:0.5rem;
+    margin:$space-1;
   }
   &__field {
     font-size: 1.05rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
     border-radius: 10px;
-    outline: none;
-    border:none;
+    box-shadow:0px 0px 2px #000;
+    padding:$space-half;
+    margin:$space-half;
     &:focus {
       background: $color-light;
     }
   }
   &__btn {
-    padding: 0.5rem 1rem;
     display: block;
     border-radius: 0.5rem;
-    margin: 0 auto;
-    margin-top:0.5rem;
+    margin: $space-1 auto;
     background: $color-darker;
-    outline: 2px solid white;
     color: #fff;
+    padding:$space-half;
     border: none;
     cursor: pointer;
     &:hover {
-      background: #fff;
+      background: $color-light;
       color: #000;
     }
   }
   &__text__field {
+    padding:$space-half;
     font-size: 1.05rem;
     border-radius: 10px;
+    box-shadow:0px 0px 2px #000;
     width: 95%;
-    padding: 0.5rem;
     max-width: 550px;
     &:focus {
       outline: none;
@@ -426,33 +429,46 @@ transform:rotate(90deg);
 //address
 
 .address {
-  padding: 2rem;
-  line-height: 1.5rem;
+  &__container{
+    padding:$space-1;
+  }
+  &__header{
+    color:#fff;
+    background:$color-darker;
+    padding:$space-half;
+  }
   &__item {
-    padding: 0.5rem;
+    margin-bottom:$space-1;
     &--big {
       text-transform: uppercase;
       font-size: 1.05rem;
     }
   }
   &__phone {
-    color: #fff;
+    color: #000;
   }
 }
 
 // social
 
 .footer__nav {
-  margin-top:0.5rem;
-  padding: 2rem;
+  &__header{
+    background:$color-darker;
+    color:#fff;
+    padding:$space-half;
+    display: grid;
+    place-content: center;
+  }
   &__bar {
+    padding:$space-1;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: space-evenly;
   }
   &__item {
-    padding: 0.5rem;
+    color:#000;
+    margin:$space-half;
     &:hover {
       color: $color-light;
     }
@@ -461,20 +477,21 @@ transform:rotate(90deg);
 // social media
 
 .social {
+  padding:$space-1;
+  border-top:1px solid $color-darker;
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
-  padding: 1rem;
   &__item {
     &:hover {
-      color: $color-darker;
+      color: $color-light;
       cursor: pointer;
     }
   }
 }
 
 .copyrights {
-  padding: 1rem;
+  padding-bottom:$space-1;
   letter-spacing: 1ch;
 }
 
@@ -492,32 +509,23 @@ transform:rotate(90deg);
       flex-direction: row;
       position: static;
       align-items:center;
-      height: 100%;
+      height: 50px;
       justify-content: space-evenly;
-      width: 60%;
+      width: 50%;
       background: $color-transparent;
-      padding: 0.25rem;
     }
     &__item {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
   .about__text{
-    line-height: 4ch;
-  }
-  .about__text,
-  .header {
-    padding: 3rem;
+    line-height:4ch;
   }
   .header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-  }
-  .trail__card {
-    padding:1rem;
-    margin: 1rem auto;
   }
   .prices__container {
     max-width: 1000px;
@@ -533,8 +541,5 @@ transform:rotate(90deg);
     grid-template-columns: repeat(2, 1fr);
     color: #000;
     background-color: #fff;
-  }
-  .footer__nav{
-    margin-top:0;
   }
 }

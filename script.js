@@ -13,7 +13,7 @@ navIcon.addEventListener('click',(()=>{
 // trail card opener
 card.forEach(a=>{
   a.addEventListener("click",()=>{
-    a.classList.toggle('test')
+    a.classList.toggle('expand')
   })
 })
 
