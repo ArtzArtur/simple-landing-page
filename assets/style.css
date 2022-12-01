@@ -29,7 +29,6 @@ html {
   display: flex;
   align-items: center;
 }
-
 .logo__text {
   padding-inline: 1rem;
   color: #fff;
@@ -37,19 +36,16 @@ html {
   font-size: clamp(0.9rem, 4vw, 1.25rem);
   font-style: italic;
 }
-
 .logo__bicycles {
   text-align: center;
   color: #fff;
 }
-
 .logo__bicycle {
   position: absolute;
   font-size: 1rem;
   left: -5px;
   transform: rotate(-55deg);
 }
-
 .logo__mountain {
   font-size: 1.75rem;
   position: relative;
@@ -69,7 +65,6 @@ html {
   border: none;
   transition: opacity 0.3s linear;
 }
-
 .btn__top:hover {
   background: #18521b;
   color: #fff;
@@ -87,7 +82,6 @@ html {
   background: #18521b;
   padding-block: 1rem;
 }
-
 .nav__icon {
   padding-inline: 1rem;
   z-index: 2;
@@ -96,12 +90,10 @@ html {
   font-size: clamp(1.25rem, 5vw, 2.5rem);
   transition: 0.3s transform ease;
 }
-
 .nav__icon:hover {
   cursor: pointer;
   color: #09f611;
 }
-
 .nav__bar {
   transition: opacity 0.3s linear, transform 0.3s linear;
   opacity: 0;
@@ -118,12 +110,10 @@ html {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .nav__item {
   color: #fff;
   font-size: 1.5rem;
 }
-
 .nav__item:hover {
   transform: scale(1.1);
   color: #09f611;
@@ -151,18 +141,15 @@ main, footer {
   color: #fff;
   z-index: 1;
 }
-
 .header__text {
   letter-spacing: 0.5ch;
   font-size: clamp(1.6rem, 3.5vw, 9rem);
   font-weight: 800;
 }
-
 .header__subtext {
   font-size: clamp(1.3rem, 2vw, 4.5rem);
   font-weight: 700;
 }
-
 .header__link {
   width: 175px;
   border: none;
@@ -173,12 +160,10 @@ main, footer {
   padding-inline: 1rem;
   padding-block: 0.5rem;
 }
-
 .header__link:hover {
   background: #09f611;
   cursor: pointer;
 }
-
 .header__link--light {
   background: #fff;
   color: #18521b;
@@ -187,7 +172,6 @@ main, footer {
 .about {
   color: #fff;
 }
-
 .about__header {
   padding: 3rem;
   text-align: center;
@@ -195,7 +179,6 @@ main, footer {
   background: #18521b;
   font-weight: 800;
 }
-
 .about__text {
   line-height: 2.5ch;
   text-indent: 1rem;
@@ -205,7 +188,6 @@ main, footer {
   padding: 1rem;
   margin: 0 auto;
 }
-
 .about__text::first-letter {
   font-weight: 800;
   font-size: 120%;
@@ -223,31 +205,26 @@ main, footer {
   max-width: 20rem;
   margin: 1rem;
 }
-
 .card__icon {
   font-size: 3rem;
   padding-top: 1rem;
 }
-
 .card__header {
   font-size: 1.25rem;
   text-transform: uppercase;
   padding: 1rem;
 }
-
 .card__text {
   line-height: 2.5ch;
 }
 
 .animation__entry {
   opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
-
 .animation__entry--left {
   transform: translateX(-30%);
 }
-
 .animation__entry--right {
   transform: translateX(30%);
 }
@@ -275,7 +252,6 @@ main, footer {
 .trail {
   text-align: center;
 }
-
 .trail__header {
   background: #18521b;
   box-shadow: 0 0 1px #fff;
@@ -284,7 +260,6 @@ main, footer {
   color: #fff;
   padding: 3rem;
 }
-
 .trail__card {
   display: grid;
   place-content: center;
@@ -295,19 +270,15 @@ main, footer {
   position: relative;
   font-size: 1.05rem;
 }
-
 .trail__card:nth-child(2) {
   background: lightseagreen;
 }
-
 .trail__card:nth-child(3) {
-  background: #d9d9ab;
+  background: rgb(217, 217, 171);
 }
-
 .trail__card:nth-child(4) {
-  background: #e76868;
+  background: rgb(231, 104, 104);
 }
-
 .trail__card:before {
   content: "+";
   position: absolute;
@@ -316,15 +287,12 @@ main, footer {
   right: 1rem;
   transform: translateY(-50%);
 }
-
 .trail__card:not(.expand):hover {
   outline: 2px solid #fff;
 }
-
 .trail__card:hover:before {
   color: white;
 }
-
 .trail__map {
   color: #fff;
   display: block;
@@ -333,12 +301,10 @@ main, footer {
   padding: 0.5rem;
   margin: 0 auto;
 }
-
 .trail__map:hover {
   background: #09f611;
   color: #000;
 }
-
 .trail__container {
   display: grid;
   place-content: center;
@@ -348,7 +314,6 @@ main, footer {
   transition: 0.5s;
   text-align: center;
 }
-
 .trail__item {
   cursor: auto;
 }
@@ -364,14 +329,12 @@ main, footer {
 .prices {
   text-align: center;
 }
-
 .prices__container {
   padding-bottom: 1rem;
   padding-inline: 1rem;
   margin: 0 auto;
   color: #fff;
 }
-
 .prices__header {
   padding: 3rem;
   font-size: 1.25rem;
@@ -379,18 +342,15 @@ main, footer {
   color: #fff;
   box-shadow: 0 0 1px #fff;
 }
-
 .prices__list {
   max-width: 550px;
   margin: 0 auto;
 }
-
 .prices__subheader {
   color: #000;
   font-size: 1.05rem;
   padding: 1rem;
 }
-
 .prices__item {
   box-shadow: 0px 0px 2px #000;
   display: flex;
@@ -413,7 +373,6 @@ main, footer {
   background: #18521b;
   font-size: 1.25rem;
 }
-
 .contact__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -422,7 +381,6 @@ main, footer {
 .form__fields {
   margin: 1rem;
 }
-
 .form__field {
   font-size: 1.05rem;
   border-radius: 10px;
@@ -430,11 +388,9 @@ main, footer {
   padding: 0.5rem;
   margin: 0.5rem;
 }
-
 .form__field:focus {
   background: #09f611;
 }
-
 .form__btn {
   display: block;
   border-radius: 0.5rem;
@@ -445,12 +401,10 @@ main, footer {
   border: none;
   cursor: pointer;
 }
-
 .form__btn:hover {
   background: #09f611;
   color: #000;
 }
-
 .form__text__field {
   padding: 0.5rem;
   font-size: 1.05rem;
@@ -459,7 +413,6 @@ main, footer {
   width: 95%;
   max-width: 550px;
 }
-
 .form__text__field:focus {
   outline: none;
 }
@@ -467,22 +420,18 @@ main, footer {
 .address__container {
   padding: 1rem;
 }
-
 .address__header {
   color: #fff;
   background: #18521b;
   padding: 0.5rem;
 }
-
 .address__item {
   margin-bottom: 1rem;
 }
-
 .address__item--big {
   text-transform: uppercase;
   font-size: 1.05rem;
 }
-
 .address__phone {
   color: #000;
 }
@@ -494,7 +443,6 @@ main, footer {
   display: grid;
   place-content: center;
 }
-
 .footer__nav__bar {
   padding: 1rem;
   display: flex;
@@ -502,12 +450,10 @@ main, footer {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .footer__nav__item {
   color: #000;
   margin: 0.5rem;
 }
-
 .footer__nav__item:hover {
   color: #09f611;
 }
@@ -519,7 +465,6 @@ main, footer {
   justify-content: space-around;
   font-size: 1.5rem;
 }
-
 .social__item:hover {
   color: #09f611;
   cursor: pointer;
