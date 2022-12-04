@@ -77,7 +77,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 0.5rem;
   z-index: 2;
   background: #18521b;
   padding-block: 1rem;
@@ -101,7 +101,7 @@ html {
   transform: translateX(30%);
   position: absolute;
   right: 0;
-  top: 2rem;
+  top: 2.75rem;
   height: 100vh;
   width: 100%;
   background: #18521b;
@@ -220,13 +220,13 @@ main, footer {
 
 .animation__entry {
   opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 0.45s ease-in-out, transform 0.45s ease-in-out;
 }
 .animation__entry--left {
-  transform: translateX(-30%);
+  transform: translateX(-15%);
 }
 .animation__entry--right {
-  transform: translateX(30%);
+  transform: translateX(15%);
 }
 
 .animation__entry.animation__active {
@@ -420,6 +420,7 @@ main, footer {
   padding: 1rem;
 }
 .address__header {
+  height: 50px;
   color: #fff;
   background: #18521b;
   padding: 0.5rem;
@@ -441,6 +442,8 @@ main, footer {
   padding: 0.5rem;
   display: grid;
   place-content: center;
+  white-space: nowrap;
+  height: 50px;
 }
 .footer__nav__bar {
   padding: 1rem;
@@ -519,5 +522,8 @@ main, footer {
     grid-template-columns: repeat(2, 1fr);
     color: #000;
     background-color: #fff;
+  }
+  .address {
+    border-right: 1px solid #000;
   }
 }
