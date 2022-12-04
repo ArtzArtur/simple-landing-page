@@ -22,7 +22,7 @@ input, textarea {
 html {
   scroll-behavior: smooth;
   font-size: 20px;
-  scroll-padding-top: 28px;
+  scroll-padding-top: 55px;
 }
 
 .logo {
