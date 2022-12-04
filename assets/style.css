@@ -77,7 +77,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  padding: 50px;
   z-index: 2;
   background: #18521b;
   padding-block: 1rem;
@@ -173,7 +173,7 @@ main, footer {
   color: #fff;
 }
 .about__header {
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
   box-shadow: 0 0 2px #fff;
   background: #18521b;
@@ -258,17 +258,17 @@ main, footer {
   text-align: center;
   font-size: 1.25rem;
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
 }
 .trail__card {
   display: grid;
   place-content: center;
   padding: 1rem;
   width: clamp(150px, 80vw, 800px);
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   cursor: pointer;
   position: relative;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 .trail__card:nth-child(2) {
   background: lightseagreen;
@@ -284,7 +284,7 @@ main, footer {
   position: absolute;
   top: 50%;
   font-size: 1.5rem;
-  right: 1rem;
+  right: 0.25rem;
   transform: translateY(-50%);
 }
 .trail__card:not(.expand):hover {
@@ -336,7 +336,7 @@ main, footer {
   color: #fff;
 }
 .prices__header {
-  padding: 3rem;
+  padding: 2rem;
   font-size: 1.25rem;
   background: #18521b;
   color: #fff;
@@ -348,8 +348,7 @@ main, footer {
 }
 .prices__subheader {
   color: #000;
-  font-size: 1.05rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .prices__item {
   box-shadow: 0px 0px 2px #000;
@@ -369,7 +368,7 @@ main, footer {
 
 .contact__header {
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
   background: #18521b;
   font-size: 1.25rem;
 }
