@@ -233,18 +233,11 @@ main, footer {
 
 .animation__entry {
   opacity: 0;
-  transition: opacity 0.45s ease-in-out, transform 0.45s ease-in-out;
-}
-.animation__entry--left {
-  transform: translateX(-15%);
-}
-.animation__entry--right {
-  transform: translateX(15%);
+  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
 .animation__entry.animation__active {
   opacity: 1;
-  transform: translateX(0);
 }
 
 .visible {
