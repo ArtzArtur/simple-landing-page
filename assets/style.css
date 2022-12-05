@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 ul {
   margin: 0;
   list-style: none;
@@ -75,6 +80,7 @@ html {
 
 .nav {
   position: fixed;
+  max-width: 1250px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -148,13 +154,13 @@ main, footer {
 }
 .header__text {
   letter-spacing: 0.3ch;
-  font-size: clamp(1.5rem, 3.5vw, 9rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: 800;
 }
 .header__subtext {
   margin: 0.5rem;
-  font-size: clamp(1.2rem, 2vw, 4.5rem);
-  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  font-weight: 500;
 }
 .header__link {
   width: 175px;
@@ -162,7 +168,8 @@ main, footer {
   display: inline-block;
   background: #18521b;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: clamp(0.85rem, 1.25vw, 2.5rem);
   padding-inline: 1rem;
   padding-block: 0.5rem;
   border-radius: 20px;
@@ -190,7 +197,6 @@ main, footer {
   line-height: 2.5ch;
   text-indent: 1rem;
   text-align: justify;
-  max-width: 1000px;
   color: #000;
   padding: 1rem;
   margin: 0 auto;
@@ -271,7 +277,7 @@ main, footer {
   display: grid;
   place-content: center;
   padding: 1rem;
-  width: clamp(150px, 80vw, 800px);
+  width: clamp(175px, 80vw, 800px);
   margin: 1rem auto;
   cursor: pointer;
   position: relative;
@@ -292,7 +298,7 @@ main, footer {
   position: absolute;
   top: 50%;
   font-size: 1.5rem;
-  right: 0.25rem;
+  right: 1rem;
   transform: translateY(-50%);
 }
 .trail__card:not(.expand):hover {
@@ -300,6 +306,9 @@ main, footer {
 }
 .trail__card:hover:before {
   color: white;
+}
+.trail__card__header {
+  max-width: 150px;
 }
 .trail__map {
   color: #000;
@@ -406,6 +415,7 @@ main, footer {
   border-radius: 20px;
   margin: 1rem auto;
   background: #18521b;
+  font-size: 1.05rem;
   color: #fff;
   padding: 0.5rem;
   border: none;
@@ -515,7 +525,7 @@ main, footer {
     line-height: 4ch;
   }
   .header {
-    width: 80%;
+    width: 65%;
   }
   .logo__text {
     font-weight: 800;
