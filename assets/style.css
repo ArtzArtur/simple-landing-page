@@ -33,7 +33,7 @@ html {
   padding-inline: 1rem;
   color: #fff;
   font-weight: 100;
-  font-size: clamp(0.9rem, 4vw, 1.25rem);
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
   font-style: italic;
 }
 .logo__bicycles {
@@ -64,6 +64,7 @@ html {
   color: #18521b;
   border: none;
   transition: opacity 0.3s linear;
+  border-radius: 10px;
 }
 .btn__top:hover {
   background: #18521b;
@@ -142,8 +143,8 @@ main, footer {
   z-index: 1;
 }
 .header__text {
-  letter-spacing: 0.5ch;
-  font-size: clamp(1.6rem, 3.5vw, 9rem);
+  letter-spacing: 0.3ch;
+  font-size: clamp(1.5rem, 3.5vw, 9rem);
   font-weight: 800;
 }
 .header__subtext {
@@ -159,6 +160,7 @@ main, footer {
   font-weight: 800;
   padding-inline: 1rem;
   padding-block: 0.5rem;
+  border-radius: 10px;
 }
 .header__link:hover {
   background: #09f611;
@@ -269,6 +271,7 @@ main, footer {
   cursor: pointer;
   position: relative;
   font-size: 1rem;
+  border-radius: 10px;
 }
 .trail__card:nth-child(2) {
   background: lightseagreen;
@@ -294,12 +297,14 @@ main, footer {
   color: white;
 }
 .trail__map {
-  color: #fff;
+  color: #000;
   display: block;
+  border-radius: 10px;
   max-width: 250px;
-  background: rgba(85, 126, 98, 0.767);
+  background: #fff;
   padding: 0.5rem;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 .trail__map:hover {
   background: #09f611;
@@ -351,6 +356,7 @@ main, footer {
   padding: 0.5rem;
 }
 .prices__item {
+  border-radius: 10px;
   box-shadow: 0px 0px 2px #000;
   display: flex;
   justify-content: space-between;
