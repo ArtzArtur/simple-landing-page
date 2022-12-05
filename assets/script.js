@@ -50,7 +50,7 @@ entries.forEach(entry=>{
   }
 });
 },{
-  threshold:0.035
+  threshold:0.065
 })
 sections.forEach(s=>{
   observer.observe
