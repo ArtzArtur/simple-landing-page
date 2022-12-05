@@ -154,12 +154,15 @@ main, footer {
 }
 .header__text {
   letter-spacing: 0.3ch;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: 800;
+}
+.header__text span {
+  color: #09f611;
 }
 .header__subtext {
   margin: 0.5rem;
-  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  font-size: clamp(1.25rem, 2vw, 2.5rem);
   font-weight: 500;
 }
 .header__link {
@@ -179,6 +182,7 @@ main, footer {
   cursor: pointer;
 }
 .header__link--light {
+  margin-top: 3px;
   background: #fff;
   color: #18521b;
 }
