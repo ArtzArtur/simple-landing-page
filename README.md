@@ -1,4 +1,4 @@
-# WorldsOfTrails Landing page
+# Simple landing page
 > Landing page made in HTML,CSS and JavaScript with bikepark main theme.
 > Live demo [_here_](https://artzartur.github.io/simple-landing-page/).
 
