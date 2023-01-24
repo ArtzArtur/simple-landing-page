@@ -1,4 +1,4 @@
-# Project Name
+# WorldsOfTrails Landing page
 > Landing page made in HTML,CSS and JavaScript with bikepark main theme.
 > Live demo [_here_](https://artzartur.github.io/simple-landing-page/).
 
@@ -10,7 +10,7 @@
 
 
 ## Acknowledgements
-Training project just for improving skills.
+Training project for improving skills and learning to work with git and github.
 
 
 ## Contact
