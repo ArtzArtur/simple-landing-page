@@ -10,4 +10,4 @@
 - JavaScript ES6
 
 ## Contact
-Created by [@artur](arturlesnik@gmail.com) - feel free to contact with me!
+Created by [@artur](mailto:arturlesnik@gmail.com?subject=[GitHub]Simple-landing-page) - feel free to contact with me!
