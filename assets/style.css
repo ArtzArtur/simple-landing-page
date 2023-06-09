@@ -9,11 +9,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
 ul {
   margin: 0;
   list-style: none;
@@ -79,9 +74,8 @@ html {
 }
 
 .nav {
-  position: fixed;
-  max-width: 1250px;
   width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -445,10 +439,13 @@ main, footer {
 }
 .address__item {
   margin-bottom: 1rem;
+  position: relative;
 }
 .address__item--big {
+  font-style: normal;
   text-transform: uppercase;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .address__phone {
   color: #000;
